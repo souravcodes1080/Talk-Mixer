@@ -120,23 +120,7 @@
     height: max-content;
 }
 
-.input-wrapper{
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    padding: 20px 40px;
-    background-color: #2e2e2e;
-}
-.input-wrapper img{
-    cursor: pointer;
-}
-.input-wrapper input{
-    height: 30px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    width: 90%;
-}
+
 .chat-input {
     flex: 0 0 auto; 
   }
@@ -146,39 +130,40 @@
     overflow: auto;
     overflow-x: hidden;
 }
-.input-wrapper {
+.input-wrapper{
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between; 
-    padding: 20px 40px; 
-  }
-  
-  .input-wrapper .emoji,
-  .input-wrapper .send {
-    flex: 0 0 auto; 
-  }
-  
-  .input-wrapper .input-tab {
-    flex: 1 1 auto; 
-    margin: 0 30px;
-    height: 100%; 
-  }
-  
-  .input-wrapper .input-tab form {
-    /* margin: 0 10px ; */
-    width: 100%; /* Take up full width */
-    height: 100%;
-  }
-  
-  .input-wrapper .input-tab input[type="text"] {
-    width: 100%; 
-    padding: 8px; 
+    padding: 20px 40px;
+    background-color: #2e2e2e;
+    gap: 2rem;
+}
+.input-wrapper img{
+    cursor: pointer;
+}
+.input-wrapper input{
+    height: 40px;
+    outline: none;
     border: none;
-    border-radius: 5px; 
-    height: 30px;
+    border-radius: 5px;
+    width: 100%;
     font-size: 16px;
+    padding: 0 10px;
+}
+  .input-form{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+
   }
 
+
+  .send{
+    background: transparent;
+    outline: none;
+    border: 0;
+  }
   .emoji-picker-react{
     position: absolute;
     top: -10px;
