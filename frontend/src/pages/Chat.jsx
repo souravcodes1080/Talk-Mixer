@@ -4,48 +4,68 @@ import "../styles/chat.css";
 import axios from "axios";
 import { allUsers } from "../utils/ApiRoutes";
 import Contacts from "../components/Contacts";
+import Welcome from "../components/Welcome";
+import ChatComponent from "../components/ChatComponent";
 function Chat() {
   const navigate = useNavigate();
   const [contacts, setContacts] = useState([]);
-  const [currentUser, setCurrentUser] = useState(JSON.parse(localStorage.getItem("chat-app-user")));
+  const [currentUser, setCurrentUser] = useState("");
   const [currentChat, setCurrentChat] = useState(undefined);
+  useEffect(() => {
+    if (!localStorage.getItem("chat-app-user")) {
+      navigate("/auth/v1/671uy885/login");
+    } else {
+      loadCurrentUser();
+    }
+  }, []);
 
-  const loadContacts = async () => {
+  const loadCurrentUser = async () => {
+    const cUser = await JSON.parse(localStorage.getItem("chat-app-user"));
+    setCurrentUser(cUser);
+    // Load contacts after setting currentUser
+    loadContacts(cUser);
+  };
+
+  const loadContacts = async (user) => {
     try {
-      if (currentUser) {
-        const response = await axios.get(`${allUsers}/${currentUser._id}`);
+      if (user) {
+        const response = await axios.get(`${allUsers}/${user._id}`);
         setContacts(response.data);
-        console.log("all- ",response.data)
       }
     } catch (error) {
       console.error("Error fetching contacts:", error);
     }
   };
-  
-  console.log("curr",currentUser)
-  
-  const handleChatChange = (chat) =>{
-    setCurrentChat(chat)
-  }
 
-  useEffect(() => {
-    if (!localStorage.getItem("chat-app-user")) {
-          navigate("/auth/v1/671uy885/login");
-        }
-      loadContacts()  
-    
-  }, []);
+  const close = () =>{
+    setCurrentChat(undefined)
+  }
+  const handleChatChange = (chat) => {
+    setCurrentChat(chat);
+  };
 
   return (
     <>
       <div className="chat-wrapper">
         <div className="chat-container">
-        <div className="chat-user-list">
-          <Contacts contacts={contacts} currentUser={currentUser} changeChat = {handleChatChange} />
-        </div>
-        <div className="chat-box">
-
-        </div>
+          <div className="chat-user-list">
+            <Contacts
+              contacts={contacts}
+              currentUser={currentUser}
+              changeChat={handleChatChange}
+            />
+          </div>
+          <div className="chat-box">
+            {currentChat === undefined ? (
+              <Welcome currentUser={currentUser} />
+            ) : (
+              <>
+              <div className="close">  </div>
+              <ChatComponent currentChat={currentChat} close = {close}/> 
+              </>
+            
+            )}
+          </div>
         </div>
       </div>
     </>

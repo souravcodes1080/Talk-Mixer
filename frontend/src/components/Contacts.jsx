@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
+import logout from "../assets/logout.svg";
+import "../styles/chat.css"
+import { useNavigate } from "react-router-dom";
 function Contacts({ contacts, currentUser, changeChat }) {
+  const navigate = useNavigate()
   const [currentUsername, setCurrentUsername] = useState("");
   const [currentUserAvatar, setCurrentUserAvatar] = useState("");
   const [currentUserPhonenumber, setCurrentUserPhonenumber] = useState("");
@@ -16,6 +20,10 @@ function Contacts({ contacts, currentUser, changeChat }) {
     }
   }, [currentUser]);
 
+  const logoff = () =>{
+    localStorage.clear()
+    navigate("/")
+  }
   const changeCurrentChat = (index, contact) => {
     setcurrentSelected(index);
     changeChat(contact);
@@ -47,9 +55,10 @@ function Contacts({ contacts, currentUser, changeChat }) {
                 </div>
               );
             })}
+              
           </div>
-
-          <div className="current-user ">
+            <div className="current-user-wrapper">
+              <div className="current-user ">
             <div className="avatar">
               <img src={`${currentUserAvatar}.png`} alt="" width={"50px"} />
             </div>
@@ -57,6 +66,12 @@ function Contacts({ contacts, currentUser, changeChat }) {
               <p>{currentUsername}</p>
             </div>
           </div>
+          <div  className='cross-btn ' onClick={logoff}>
+                    <img src={logout} alt="crossBtn" width={"20px"} />
+                </div>
+            </div>
+          
+          
         </div>
       )}
     </>
