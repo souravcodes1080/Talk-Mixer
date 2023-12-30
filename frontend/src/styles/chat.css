@@ -179,6 +179,22 @@
     font-size: 16px;
   }
 
+  .emoji-picker-react{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #242424 !important; 
+    border: none !important;
+  }
+
+  .EmojiPickerReact li.epr-emoji-category>.epr-emoji-category-label {
+
+      background-color: #242424 !important; 
+  }
+  .EmojiPickerReact .epr-search-container input.epr-search  {
+    background-color: #424242 !important; 
+    border: none !important;
+  }
 @media only screen and (max-width: 994px) {
     .chat-container{
         width: 100vw;
