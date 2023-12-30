@@ -1,3 +1,4 @@
+import { json } from "express";
 import { User } from "../models/user.model.js";
 import bcrypt from "bcrypt";
 
@@ -14,11 +15,15 @@ const register = async (req, res, next) => {
       });
     }
     const hashedPassword = await bcrypt.hash(password, 10);
+    const AVATAR_API = "https://api.multiavatar.com"
+    const setAvatar = `${AVATAR_API}/${Math.round(Math.random()*1000)}`
     const user = await User.create({
       username,
       phonenumber,
       password: hashedPassword,
+      avatar: setAvatar
     });
+
     delete user.password;
     return res.status(201).json({
       message: "User created sucessfully.",
@@ -60,4 +65,15 @@ const login = async (req, res, next) => {
   }
 };
 
-export { register, login };
+const getAllUsers = async (req, res, next)=>{
+  try{
+    const users = await User.find({_id:{$ne: req.params.id}}).select(
+      ["_id", "username", "phonenumber", "avatar"]
+    )
+    return res.json(users)
+  }catch(error){
+    next(error)
+  }
+}
+
+export { register, login, getAllUsers };

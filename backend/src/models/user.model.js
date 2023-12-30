@@ -15,10 +15,6 @@ const userSchema = new mongoose.Schema({
         type:String,
         required: true
     },
-    avatarSet:{
-        type: Boolean,
-        default: false
-    },
     avatar:{
         type: String,
         default: ""

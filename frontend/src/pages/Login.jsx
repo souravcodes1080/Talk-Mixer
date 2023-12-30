@@ -11,7 +11,7 @@ function Login() {
   const navigate = useNavigate()
   useEffect(()=>{
     if(localStorage.getItem("chat-app-user")){
-      navigate("/")
+      navigate("/auth/v1/509hike119/chat")
     }
   }, [])
   const [values, setValues] = useState({
@@ -49,9 +49,9 @@ function Login() {
           password,
         })
         if (response.data.status) {
-          localStorage.setItem("chat-app-user",JSON.stringify(response.data.user))
+          localStorage.setItem("chat-app-user",JSON.stringify(response.data.existingUser))
           toast.success(response.data.message, toastOptions);
-          navigate("/")
+          navigate("/auth/v1/509hike119/chat")
         } else {
           toast.error(response.data.message, toastOptions);
         }

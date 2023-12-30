@@ -10,4 +10,4 @@ app.use(express.json())
 import userRouter from "./routes/user.route.js"
 app.use("/api/auth/v1", userRouter)
 
-export default app
+export default app 

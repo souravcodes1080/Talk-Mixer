@@ -11,7 +11,7 @@ function Register() {
   const navigate = useNavigate()
   useEffect(()=>{
     if(localStorage.getItem("chat-app-user")){
-      navigate("/")
+      navigate("/auth/v1/509hike119/chat")
     }
   }, [])
   const [values, setValues] = useState({
@@ -62,7 +62,7 @@ function Register() {
           toast.success(response.data.message, toastOptions);
           localStorage.setItem("chat-app-user",JSON.stringify(response.data.user))
           
-          navigate("/auth/v1/456az342/set_avatar")
+          navigate("/auth/v1/671uy885/login")
         } else {
           toast.error(response.data.message, toastOptions);
         }

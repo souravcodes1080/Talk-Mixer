@@ -30,6 +30,30 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=number] {
+/* input[type=number] {
   -moz-appearance: textfield;
+} */
+
+.loader{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(54, 54, 54);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 15px;
+}
+
