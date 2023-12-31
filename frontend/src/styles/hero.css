@@ -61,8 +61,10 @@ hr{
     border: 1px solid rgba(255, 255, 255, 0.185);
 }
 .footer p{
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
     color: rgb(110, 110, 110) !important;
 }
 .footer p a{

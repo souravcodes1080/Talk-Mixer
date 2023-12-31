@@ -9,9 +9,8 @@ function Homepage() {
     <div className="container-wrapper">
       <Header />
       <Hero />
-      <br /><br />
-      <br /><br /><br /><br /><br /><br /><br /><br />
-      <hr />
+      
+      
       <Footer />
     </div>
   );
