@@ -29,11 +29,11 @@
 <li><h3>$ npm run dev</h3></li>
 </ol>
 
-<div align="center">
+
 <img src="https://res.cloudinary.com/dva2ofmyy/image/upload/v1704019749/wdrurjrwnpgoabwzpeuy.png" />
-<img src="https://res.cloudinary.com/dva2ofmyy/image/upload/v1704019747/vznan54vm2lpq7w4jebv.png" />
+<img src="https://res.cloudinary.com/dva2ofmyy/image/upload/v1704019747/vznan54vm2lpq7w4jebv.png" width="300px"/>
 <img src="https://res.cloudinary.com/dva2ofmyy/image/upload/v1704019748/eygbsywdqofq62acjj9t.png" />
 <img src="https://res.cloudinary.com/dva2ofmyy/image/upload/v1704019748/fxjghdwspcyjqsiwqbtf.png" />
 <img src="https://res.cloudinary.com/dva2ofmyy/image/upload/v1704019748/vkefyefes03grxwjzhow.png" />
 <img src="https://res.cloudinary.com/dva2ofmyy/image/upload/v1704019748/p9z2qdku8ear0lprdgqk.png" />
-</div>
+
