@@ -19,12 +19,12 @@ export default function ChatInput({ handleChatMsg }) {
     };
 
   const sendChat = (e) => {
-    console.log(e);
+    
     e.preventDefault();
     if (msg.length > 0) {
       handleChatMsg(msg);
       setMsg("");
-      console.log(msg)
+      
     }
   };
   return (

@@ -1,0 +1,50 @@
+.container-wrapper{
+    width: 100%;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.header-tab{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-tab .right{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.get-started{
+    background-color: rgb(110, 110, 255);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+header .tab-link{
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 994px) {
+    .container{
+        width: 90%;
+    }
+    
+  }
+
+  @media only screen and (max-width: 675px) {
+    .container{
+        width: 94%;
+    }
+    .about-us, .services, .contact-us{
+        display: none;
+    }
+    
+  }

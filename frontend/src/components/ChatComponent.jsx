@@ -28,13 +28,12 @@ function ChatComponent({ currentChat, close, currentUser, socket     }) {
           from: currentUser._id,
           to: currentChat._id,
         });
-        console.log(response.data);
+        
         setMessages(response.data);
       } catch (error) {
         console.error("Error fetching messages:", error);
       }
     };
-    console.log("print", messages);
     if (currentChat) {
       fetchMessages();
       
