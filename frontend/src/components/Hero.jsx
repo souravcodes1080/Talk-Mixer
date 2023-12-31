@@ -14,7 +14,7 @@ function Hero() {
             </h1>
 
             <p>
-            Connect and converse effortlessly with Hike. Share ideas, stay in touch, and foster relationships through seamless messaging. Register and experience smooth communication like never before!
+            Connect and converse effortlessly with the World. Share ideas, stay in touch, and foster relationships through seamless messaging. Register and experience smooth communication like never before!
               <br />
               <br />
               <Link to="/auth/v1/560qw108/register">

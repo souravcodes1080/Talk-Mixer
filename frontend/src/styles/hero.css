@@ -39,6 +39,44 @@
     justify-content: center;
 }
 
+
+
+
+
+
+.footer .tabs{
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer  a{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(173, 173, 173);
+    margin: 0 10px;
+}
+
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.185);
+}
+.footer p{
+    display: flex;
+    justify-content: center;
+    color: rgb(110, 110, 110) !important;
+}
+.footer p a{
+    color: rgb(110, 110, 110) !important;
+
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
 @media only screen and (max-width: 825px) {
     .hero-section{
         display: block;
@@ -57,3 +95,7 @@
     }
     
   }
+
+
+
+
