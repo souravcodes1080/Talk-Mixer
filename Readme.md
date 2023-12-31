@@ -5,8 +5,7 @@
 <h4>M E R N Stack Project</h4>
 <h4>Build using socket.io</h4>
 </div>
-<p>Hike is a real time chat application which is powered by <i>Socket.io</i>. It is build on 
-<i>MERN stack</i> and <i>Multi Avatar Api is used</i></p>
+<p>Hike is a real time chat application which is powered by <i>Socket.io</i>. 
 
 <h2>Features - </h2>
 <ul>
@@ -15,6 +14,8 @@
 <li>Fast and responsive APIs</li>
 <li>Minimal, aesthetic frontend</li>
 <li>Responsive Design</li>
+<li>React emoji Picker</li>
+<li>Multi Avatar API, random DP for users</li>
 </ul>
 
 <h2>How to setup?</h2>
