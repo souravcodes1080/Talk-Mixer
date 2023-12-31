@@ -38,12 +38,10 @@ const getAllMessage = async (req, res, next) => {
     
 
     const options = {
- 
       month: 'short', 
       day: 'numeric',
       hour: 'numeric',
       minute: 'numeric',
-
       hour12: true
     };
     const projectMsg = messages.map((msg) => {
