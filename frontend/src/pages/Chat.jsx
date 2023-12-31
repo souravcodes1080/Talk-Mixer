@@ -61,7 +61,7 @@ function Chat() {
             ) : (
               <>
               <div className="close">  </div>
-              <ChatComponent currentChat={currentChat} close = {close}/> 
+              <ChatComponent currentChat={currentChat} currentUser= {currentUser} close = {close}/> 
               </>
             
             )}

@@ -12,11 +12,11 @@ export default function ChatInput({ handleChatMsg }) {
     setShowEmojiPicker(!showEmojiPicker);
   };
 
-  const handleEmojiClick = (emojiObject, event) => {
-    const emoji = emojiObject.emoji;
+  const handleEmojiClick = async (emojiObject, event) => {
+    const emoji =  emojiObject.emoji;
     const newMessage = msg + emoji;
     setMsg((prevMsg) => prevMsg + emoji);
-  };
+    };
 
   const sendChat = (e) => {
     console.log(e);
@@ -33,6 +33,7 @@ export default function ChatInput({ handleChatMsg }) {
         <Picker
           className="emoji-picker-react"
           onEmojiClick={handleEmojiClick}
+          height={350} width={400}
         />
       )}
       <div className="input-wrapper">
