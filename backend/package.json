@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": "node server.js",
+    "start": "node src/index.js",
     "build": "npm install"
   },
   "author": "Sourav",
