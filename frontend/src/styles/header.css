@@ -12,6 +12,10 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.header-tab .left img{
+   margin-top: 6px;
+}
 .header-tab .right{
     display: flex;
     align-items: center;
@@ -19,7 +23,7 @@
 }
 .get-started{
     background-color: rgb(110, 110, 255);
-    padding: 10px 15px;
+    padding: 20px 30px;
     border: none;
     border-radius: 5px;
     outline: none;

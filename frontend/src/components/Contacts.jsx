@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.svg";
 import logout from "../assets/logout.svg";
 import "../styles/chat.css"
 import { useNavigate } from "react-router-dom";
@@ -34,7 +34,7 @@ function Contacts({ contacts, currentUser, changeChat }) {
       {currentUserAvatar && currentUsername && (
         <div className="user-list-container">
           <div className="brand">
-            <img src={logo} alt="" width={"35%"} />
+            <img src={logo} alt="" width={"20%"} />
           </div>
           <div className="contacts">
             {contacts.map((contact, index) => {
@@ -59,7 +59,7 @@ function Contacts({ contacts, currentUser, changeChat }) {
           </div>
             <div className="current-user-wrapper">
               <div className="current-user ">
-            <div className="avatar">
+            <div className="avatar avatar-user">
               <img src={`${currentUserAvatar}.png`} alt="" width={"50px"} />
             </div>
             <div className="username">

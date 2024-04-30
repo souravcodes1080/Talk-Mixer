@@ -9,7 +9,7 @@ function Hero() {
         <div className="left">
           <div className="hero-content">
             <h1>
-              Welcome to Hike,
+              Welcome to Talk Mixer,
               <br /> <span>Chat App</span>
             </h1>
 

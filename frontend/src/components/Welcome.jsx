@@ -7,7 +7,7 @@ function Welcome({ currentUser }) {
       <div className="body-wrapper">
         <img src={convrsation} alt="" className="hero" width={"40%"} />
         <h1>Welcome, {currentUser.username}</h1>
-        <h2 >Select chat to start a hike!</h2>
+        <h2 >Select chat to start a talk!</h2>
       </div>
     </>
   );

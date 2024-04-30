@@ -29,7 +29,7 @@
     justify-content: space-between;
 }
 .brand{
-    margin: 20px 0;
+    margin-top: 20px;
     width: 100%;
     display: flex;    
     justify-content: center;
@@ -122,13 +122,16 @@
 
 
 .chat-input {
-    flex: 0 0 auto; 
+    flex: 0 0 auto;
+    position: relative; 
   }
 .chat-body{
     height: 100px;
     flex: 1 1 auto;
     overflow: auto;
     overflow-x: hidden;
+    background-image: url("../assets/chatBackground.jpg");
+
 }
 .input-wrapper{
     width: 100%;
@@ -138,6 +141,8 @@
     padding: 20px 40px;
     background-color: #2e2e2e;
     gap: 2rem;
+    border-bottom-right-radius: 15px ;
+    
 }
 .input-wrapper img{
     cursor: pointer;
@@ -184,6 +189,10 @@
     display: none !important;
   }
 
+  .EmojiPickerReact{
+    position: absolute !important;
+    top: -350px;
+  }
   .chat-body{
     padding: 20px;
   }
@@ -239,14 +248,24 @@
     .chat-container{
         width: 100vw;
         height: 100vh;
-
-        grid-template-columns: 30% 70%;
-
+        /* grid-template-columns: 30% 70%; */
+    }
+    .chat-user-list{
+        border-radius: 0 ;
+    }
+    .chat-header{
+        border-top-right-radius: 0px  !important;
+    }
+    .input-wrapper{
+        border-bottom-right-radius: 0px;
     }
   }
 
 
   @media only screen and (max-width: 740px) {
+    .chat-container{
+        grid-template-columns: 1fr 10fr;
+    }
     .input-wrapper{
         padding: 20px 20px;
         background-color: #2e2e2e;
@@ -256,5 +275,28 @@
         
         gap: 1rem;
     
+      }
+      .username{
+        display: none;
+      }
+      .avatar-user{
+        display: none;
+      }
+      .emoji{
+        display: none;
+      }
+      .brand img{
+        width: 50px !important;
+        
+      }
+      .chat-user-list{
+        width: max-content;
+      }
+      .contacts{
+        padding: 10px 0;
+        
+      }
+      .contact{
+        background-color: transparent;
       }
   }
