@@ -12,13 +12,13 @@ function Header() {
           </div>
           <div className="right">
           <div className="about-us">
-            <Link className="tab-link" to= "/" >About Us</Link>
+            <Link className="tab-link" to= "#" >About Us</Link>
           </div>
           <div className="services">
-            <Link className="tab-link" to= "/" >Services</Link>
+            <Link className="tab-link" to= "#" >Services</Link>
           </div>
           <div className="contact-us">
-            <Link className="tab-link" to= "/" >Contact Us</Link>
+            <Link className="tab-link" to= "#" >Contact Us</Link>
           </div>
             <Link to="/auth/v1/671uy885/login">
               <button className="get-started">Login</button>

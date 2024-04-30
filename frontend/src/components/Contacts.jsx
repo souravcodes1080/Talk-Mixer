@@ -22,7 +22,7 @@ function Contacts({ contacts, currentUser, changeChat }) {
 
   const logoff = () =>{
     localStorage.clear()
-    navigate("/")
+    navigate("/home")
   }
   const changeCurrentChat = (index, contact) => {
     setcurrentSelected(index);
