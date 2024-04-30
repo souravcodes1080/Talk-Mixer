@@ -11,7 +11,7 @@ function Login() {
   const navigate = useNavigate()
   useEffect(()=>{
     if(localStorage.getItem("chat-app-user")){
-      navigate("/auth/v1/509hike119/chat")
+      navigate("auth/v1/509talkmixer119/chat")
     }
   }, [])
   const [values, setValues] = useState({
