@@ -51,7 +51,7 @@ function Login() {
         if (response.data.status) {
           localStorage.setItem("chat-app-user",JSON.stringify(response.data.existingUser))
           toast.success(response.data.message, toastOptions);
-          navigate("/auth/v1/509hike119/chat")
+          navigate("/auth/v1/509talkmixer119/chat")
         } else {
           toast.error(response.data.message, toastOptions);
         }
