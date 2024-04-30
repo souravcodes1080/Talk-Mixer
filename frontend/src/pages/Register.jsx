@@ -87,7 +87,7 @@ function Register() {
       <div className="form-container">
         <form onSubmit={(e) => handleSubmit(e)}>
           <div className="brand">
-            <img src={logo} alt="app-logo" />
+            <img onClick={()=>navigate("/home")}  src={logo} alt="app-logo" />
           </div>
           <input
             type="text"

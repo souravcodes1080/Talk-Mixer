@@ -76,7 +76,7 @@ function Login() {
       <div className="form-container">
         <form onSubmit={(e) => handleSubmit(e)}>
           <div className="brand">
-            <img src={logo} alt="app-logo" />
+            <img C src={logo} alt="app-logo" />
           </div>
           
           <input
