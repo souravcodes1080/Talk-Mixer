@@ -8,6 +8,12 @@
 </div>
 <p>Talk Mixer is a real time chat application which is powered by <i>Socket.io</i>. 
 
+<a href="https://talk-mixer-frontend.onrender.com/">Go to website 🌐</a><br/>
+or copy the link below
+```
+https://talk-mixer-frontend.onrender.com/
+```
+
 <h2>Features - </h2>
 <ul>
 <li>Single paged application</li>
@@ -20,16 +26,25 @@
 </ul>
 
 <h2>How to setup?</h2>
+
+
 ```
 git clone https://github.com/souravcodes1080/hike.git
-npm i
+```
+```
+npm install
+```
+```
 cd ../backend
-npm i
-npm run dev
 ```
 ```
-Open another terminal and go inside the frontend dir
+npm install
+``````
+```
 npm run dev
-</ol>
 ```
 
+- Open another terminal and go inside the frontend dir
+```
+npm run dev
+```
