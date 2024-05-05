@@ -21,15 +21,15 @@
 
 <h2>How to setup?</h2>
 ```
-<ol>
-<li><h3>$ git clone https://github.com/souravcodes1080/hike.git</h3></li>
-<li><h3>$ cd frontend</h3></li>
-<li><h3>$ npm i</h3></li>
-<li><h3>$ cd ../backend</h3></li>
-<li><h3>$npm i</h3></li>
-<li><h3>$ npm run dev</h3></li>
-<li><h3>- Open another terminal and go inside the frontend dir</h3></li>
-<li><h3>$ npm run dev</h3></li>
+git clone https://github.com/souravcodes1080/hike.git
+npm i
+cd ../backend
+npm i
+npm run dev
+```
+```
+Open another terminal and go inside the frontend dir
+npm run dev
 </ol>
 ```
 
